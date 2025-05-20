@@ -106,3 +106,8 @@ footer {
   background: #f4f4f4;
   border-top: 1px solid #ddd;
 }
+
+#publications {
+  background-color: #ffe;
+  padding: 20px;
+}
