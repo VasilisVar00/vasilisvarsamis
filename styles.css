@@ -32,23 +32,20 @@ body {
 }
 
 .contact-links p {
-  margin: 10px 0;
-  font-size: 0.95em;
-}
-
-.contact-links i {
-  margin-right: 8px;
-  color: #007bff;
+  margin: 15px 0;
 }
 
 .contact-links a {
+  font-size: 1.6em;
   color: #007bff;
   text-decoration: none;
-  word-break: break-word;
+  display: inline-block;
+  transition: transform 0.2s ease;
 }
 
 .contact-links a:hover {
-  text-decoration: underline;
+  color: #0056b3;
+  transform: scale(1.2);
 }
 
 .main-content {
