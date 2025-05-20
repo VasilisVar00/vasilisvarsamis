@@ -21,6 +21,7 @@ body {
   align-items: flex-start;
 }
 
+/* Sidebar Styles */
 .sidebar {
   width: 250px;
   background-color: #f0f0f0;
@@ -34,9 +35,17 @@ body {
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
+.name {
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* Contact Info Below Image */
 .contact-links {
   font-size: 0.85em;
 }
@@ -66,27 +75,33 @@ body {
   font-size: 0.9em;
 }
 
+/* Main Content Area */
 .main-content {
   flex: 1;
   padding: 40px;
   background-color: white;
 }
 
+/* Sections (About, Publications, etc.) */
 .section {
   margin-bottom: 60px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .section h2 {
-  font-size: 1.5em;
-  color: #007bff;
-  margin-bottom: 15px;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #0077cc;
+  border-left: 4px solid #0077cc;
+  padding-left: 10px;
 }
 
 .section p, .section ul {
-  font-size: 1em;
-  line-height: 1.6;
+  font-size: 1.05em;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  color: #444;
 }
 
 .section ul {
@@ -94,11 +109,17 @@ body {
   padding-left: 20px;
 }
 
-/* Add background highlight just for visibility */
-.highlight {
-  background-color: #fffbe6;
+.section em {
+  font-style: italic;
+  color: #000;
 }
 
+.section strong {
+  font-weight: 600;
+  color: #000;
+}
+
+/* Hyperlink Styles */
 a {
   color: #0066cc;
   text-decoration: underline dotted;
@@ -110,10 +131,16 @@ a:hover {
   text-decoration: underline solid;
 }
 
+/* Footer */
 footer {
   text-align: center;
   padding: 20px;
   font-size: 0.9em;
   background: #f4f4f4;
   border-top: 1px solid #ddd;
+}
+
+/* Optional: Remove yellow debug background */
+.highlight {
+  background-color: transparent;
 }
