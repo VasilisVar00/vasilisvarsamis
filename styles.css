@@ -90,6 +90,7 @@ body {
 }
 
 .section h2 {
+  display: block;
   font-size: 1.8em;
   margin-bottom: 20px;
   color: #0077cc;
