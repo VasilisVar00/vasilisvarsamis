@@ -119,6 +119,13 @@ body {
   color: #000;
 }
 
+.section p {
+  font-size: 1.05em;
+  line-height: 1.7;
+  margin-top: 10px;
+  color: #444;
+}
+
 /* Hyperlink Styles */
 a {
   color: #0066cc;
