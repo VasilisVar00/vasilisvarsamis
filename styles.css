@@ -89,16 +89,15 @@ body {
   border-bottom: 1px solid #e0e0e0;
 }
 
-.section h2 {
-  display: block;
+.section-header {
+  margin-bottom: 15px;
   font-size: 1.8em;
-  margin-bottom: 20px;
   color: #0077cc;
   border-left: 4px solid #0077cc;
   padding-left: 10px;
 }
 
-.section p, .section ul {
+.section-body p {
   font-size: 1.05em;
   line-height: 1.7;
   margin-bottom: 15px;
@@ -120,12 +119,7 @@ body {
   color: #000;
 }
 
-.section p {
-  font-size: 1.05em;
-  line-height: 1.7;
-  margin-top: 10px;
-  color: #444;
-}
+
 
 /* Hyperlink Styles */
 a {
