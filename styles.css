@@ -79,13 +79,13 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: nowrap;
   gap: 4px 8px;
   margin-bottom: 40px;
   padding-bottom: 12px;
   border-bottom: 1px solid #ddd;
-  text-align: center;
+  text-align: left;
 }
 
 .site-nav a {
@@ -172,7 +172,7 @@ footer {
 
   .site-nav {
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .main-content {
