@@ -58,7 +58,7 @@
       </div>
       <div class="section-body">
         <p class="section-text">
-          I'm a 3rd-year CS PhD student at University of Southern California (USC) and a member of the <a href="https://sail.usc.edu/">Signal Analysis and Interpretation Lab (SAIL)</a>, where I am advised by <a href="https://sail.usc.edu/people/shri.html">Professor Shrikanth Narayanan</a>.
+          I'm a <span id="phd-year">3rd</span>-year CS PhD student at University of Southern California (USC) and a member of the <a href="https://sail.usc.edu/">Signal Analysis and Interpretation Lab (SAIL)</a>, where I am advised by <a href="https://sail.usc.edu/people/shri.html">Professor Shrikanth Narayanan</a>.
           I'm also affiliated with the <a href="https://viterbi-web.usc.edu/~cstheory/">USC Theory Group</a>, where I spent my first two years.  Before joining USC, I completed my undergraduate studies in 
           <a href="https://www.ece.ntua.gr/en">Electrical and Computer Engineering</a> at 
           <a href="https://www.ntua.gr/en/">the National Technical University of Athens</a>. During my studies in Greece, I was advised by 
@@ -150,9 +150,9 @@
           At USC, I have served as a teaching assistant for the following courses:
         </p>
         <ul class="section-list">
-          <li class="section-text"><strong>CSCI570: Analysis of Algorithms</strong> [Fall'25]</li>
-          <li class="section-text"><strong>CSCI570: Analysis of Algorithms</strong> [Fall'26]</li>
-          <li class="section-text"><strong>CSCI360: Artificial Intelligence: Principles and Foundations</strong> [Spring'26]</li>
+          <li class="section-text"><strong>CSCI570: Analysis of Algorithms</strong> </li>
+          <li class="section-text"><strong>CSCI570: Analysis of Algorithms</strong> </li>
+          <li class="section-text"><strong>CSCI360: Artificial Intelligence: Principles and Foundations</strong> </li>
         </ul>
       </div>
     </section>
@@ -176,6 +176,13 @@
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
+
+  var now = new Date();
+  var n = now.getFullYear() - 2024 + (now.getMonth() >= 8 ? 1 : 0);
+  document.getElementById('phd-year').textContent =
+    n + (n === 1 ? 'st' : n === 2 ? 'nd' : n === 3 ? 'rd' : 'th');
+  
+
   const themeToggle = document.querySelector('.theme-toggle');
   const savedTheme = localStorage.getItem('theme');
 
