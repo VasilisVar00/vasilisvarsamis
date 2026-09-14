@@ -171,10 +171,11 @@
 </div>
 
 <footer>
-  <p>&copy; 2025 Vasilis Varsamis</p>
+  <p>&copy; <span id="year">2026</span> Vasilis Varsamis</p>
 </footer>
 
 <script>
+  document.getElementById('year').textContent = new Date().getFullYear();
   const themeToggle = document.querySelector('.theme-toggle');
   const savedTheme = localStorage.getItem('theme');
 
